@@ -29,6 +29,7 @@ export class Start extends Phaser.Scene {
     this.platforms.create(750, 220, "ground");
 
     this.player = this.physics.add.sprite(100, 450, "dude");
+    this.player.setBounce(1);
     this.player.setCollideWorldBounds(true);
   }
 
